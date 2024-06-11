@@ -14,5 +14,5 @@ services:
     links:
       - selenoid
     ports:
-      - "5858:5858"
+      - "5454:5454"
     command: ["--selenoid-uri", "http://selenoid:4444"]
