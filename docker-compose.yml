@@ -6,6 +6,7 @@ services:
     ports:
       - "4444:4444"
     volumes:
+      - "echo 'TEST'"
       - "$PWD:/etc/src/main/kotlin/config/selenoid/" # assumed current dir contains browsers.json
       - "/var/run/docker.sock:/var/run/docker.sock"
   selenoid-ui:
